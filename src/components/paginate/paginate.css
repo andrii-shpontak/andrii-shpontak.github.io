@@ -1,0 +1,14 @@
+.paginate {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+@media (max-width: 500px) {
+    .paginate {
+        margin-top: 26px;
+    }
+}

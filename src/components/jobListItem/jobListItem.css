@@ -1,0 +1,127 @@
+.card_item {
+    position: relative;
+    max-width: 1400px;
+    height: 164px;
+    margin: 8px auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.card_photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    margin-top: 24px;
+    margin-left: 16px;
+}
+
+.card_descr {
+    position: absolute;
+    display: inline-block;
+    width: 712px;
+    margin-top: 24px;
+    margin-left: 27px;
+}
+
+.card_title {
+    font-size: 20px;
+    color: #3a4562;
+}
+
+.card_name {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #878d9d;
+}
+
+.card_address{
+    margin-top: 8px;
+    font-size: 16px;
+    color: #878d9d;
+}
+
+.card_rate {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 186px;
+    align-items: center;
+}
+
+.card_mini_rate {
+    position: absolute;
+    display: none;
+    left: 101px;
+    top: 13px;
+}
+
+.card_mark {
+    position: absolute;
+    display: inline-block;
+    right: 24px;
+    top: 30px;
+}
+
+.card_update {
+    position: absolute;
+    display: inline-block;
+    right: 24px;
+    bottom: 24px;
+    color: #878D9D;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .card_rate {
+        right: 10%;
+    }
+}
+
+@media (max-width: 940px) {
+    .card_item {
+        height: 206px;
+    }
+    .card_descr {
+        width: 70%;
+        margin-left: 19px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card_item {
+        background-color: #EFF0F5;
+    }
+    .card_photo {
+        width: 66px;
+        height: 66px;
+        margin-top: 45px;
+        margin-left: 16px;
+    }
+    .card_descr {
+        margin-top: 44px;
+        font-size: 16px;
+    }
+    .card_rate {
+        display: none;
+    }
+    .card_mini_rate {
+        display: inline-block;
+    }
+    .card_mark {
+        display: none;
+    }
+    .card_update {
+        top: 13px;
+        font-size: 14px;
+    }
+    .card_title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card_mini_rate {
+        left: 20px;
+    }
+}
