@@ -1,7 +1,7 @@
 {
   "name": "test-task-fe-allab",
   "version": "0.1.0",
-  "homepage": "https://andrii-shpontak.github.io/test-task-fe-allab",
+  "homepage": "https://andrii-shpontak.github.io",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.5",
