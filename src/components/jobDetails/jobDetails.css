@@ -321,4 +321,14 @@ footer {
   .about_text {
     max-width: 700px;
   }
+
+@media (max-width: 500px) {
+  .header_details {
+    width: 100%;
+  }
+  
+  .map {
+    width: 100%;
+  }
+}
 }

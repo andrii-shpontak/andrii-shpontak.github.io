@@ -10,9 +10,8 @@ import './jobDetails.css';
 
 const JobDetails = () => {
     const mark = useParams();
-    let oneJob = arrOfData.find(job => job.id === mark.id);
-    console.log(oneJob);
-    const { name, salary, title, createdAt, pictures, benefits, location, address, email, phone, employment_type } = oneJob;
+    let job = arrOfData.find(job => job.id === mark.id);
+    const { name, salary, title, createdAt, pictures, benefits, location, address, email, phone, employment_type } = job;
     // const loc = `${location.lat},${location.long}`;
     const searchAddress = address.replace(/ /g, ',');
     return (

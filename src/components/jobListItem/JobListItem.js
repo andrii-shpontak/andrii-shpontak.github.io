@@ -1,7 +1,7 @@
-import { Avatar, Card, Rating } from '@mui/material';
+import { Rating } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import StarIcon from '@mui/icons-material/Star';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 import './jobListItem.css';
 
@@ -19,6 +19,7 @@ const JobListItem = ({ address, benefits, createdAt, description, email, empoyme
             <div className="card_mark"><BookmarkBorderIcon style={{color: '#70778b'}}/></div>
             <div className='card_update'>Founded in {createdAt.slice(0, 4)}</div>
             <div className="card_mini_rate"><Rating defaultValue={2.5} size='small'/></div>
+            <div className="trashIcon"><DeleteIcon/></div>
         </div>
     );
 };

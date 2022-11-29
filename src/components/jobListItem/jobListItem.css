@@ -120,7 +120,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .card_mini_rate {
         left: 20px;
     }
