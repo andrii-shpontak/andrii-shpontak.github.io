@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-See preview: [DEMO LINK](https://andrii-shpontak.github.io)
+See preview: [DEMO LINK](https://andrii-shpontak.github.io/test-task-fe-allab
+)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
