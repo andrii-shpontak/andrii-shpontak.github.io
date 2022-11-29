@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/test-task-fe-allab/static/css/main.24e3eeec.css",
-    "main.js": "/test-task-fe-allab/static/js/main.07300b6f.js",
+    "main.css": "/test-task-fe-allab/static/css/main.0779ca6a.css",
+    "main.js": "/test-task-fe-allab/static/js/main.c5c879b3.js",
     "index.html": "/test-task-fe-allab/index.html",
-    "static/media/share.svg": "/test-task-fe-allab/static/media/share.7381a5999554764f3ce8.svg",
-    "static/media/mark.svg": "/test-task-fe-allab/static/media/mark.ec3754d680baa71bc2f2.svg",
-    "main.24e3eeec.css.map": "/test-task-fe-allab/static/css/main.24e3eeec.css.map",
-    "main.07300b6f.js.map": "/test-task-fe-allab/static/js/main.07300b6f.js.map"
+    "static/media/share.svg": "/test-task-fe-allab/static/media/share.6bc179c07a1aa498106e.svg",
+    "static/media/mark.svg": "/test-task-fe-allab/static/media/mark.bcbf5e465e3a14fa1256.svg",
+    "main.0779ca6a.css.map": "/test-task-fe-allab/static/css/main.0779ca6a.css.map",
+    "main.c5c879b3.js.map": "/test-task-fe-allab/static/js/main.c5c879b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.24e3eeec.css",
-    "static/js/main.07300b6f.js"
+    "static/css/main.0779ca6a.css",
+    "static/js/main.c5c879b3.js"
   ]
 }
