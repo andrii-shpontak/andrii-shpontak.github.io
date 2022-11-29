@@ -38,7 +38,7 @@ const JobBoard = () => {
     return (
         <div>
             {currentJob.map(({ id, ...props }) => {
-                return <Link to={`/${id}`} key={id}><JobListItem {...props} /></Link> 
+                return <Link to={`/test-task-fe-allab/${id}`} key={id}><JobListItem {...props} /></Link> 
             })}
             <Paginate
                 jobsPerPage={jobsPerPage}

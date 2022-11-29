@@ -8,9 +8,9 @@ function App() {
   return (
       <Container className='app'>
         <Routes>
-          <Route path='/' element={<JobBoard />}/>
-          <Route path='/:id' element={<JobDetails />}/>
-          <Route path='*' element={<JobBoard />}/>
+          <Route path='/test-task-fe-allab' element={<JobBoard />}/>
+          <Route path='/test-task-fe-allab/:id' element={<JobDetails />}/>
+          <Route path='/test-task-fe-allab/*' element={<JobBoard />}/>
         </Routes>
       </Container>
   );

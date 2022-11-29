@@ -103,7 +103,7 @@ const JobDetails = () => {
             </section>
 
             <footer>
-                <Link to='..'><Button className='footer_btn'><ArrowBackIosIcon />RETURN TO JOB BOARD</Button></Link>
+                <Link to='/test-task-fe-allab'><Button className='footer_btn'><ArrowBackIosIcon />RETURN TO JOB BOARD</Button></Link>
                 <div className="contacts">
                     <div className="header_details">Contacts</div>
                     <hr className='header_line' />
