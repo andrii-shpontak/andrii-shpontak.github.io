@@ -35,10 +35,16 @@ const JobBoard = () => {
 
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
+    const deleteItem = (id) => setJobs(jobs.filter(job => job.id !== id));
+
     return (
         <div>
-            {currentJob.map(({ id, ...props }) => {
-                return <Link to={`/test-task-fe-allab/${id}`} key={id}><JobListItem {...props} /></Link> 
+            {currentJob.map(({...props}) => {
+                return <JobListItem 
+                    key={props.id} 
+                    {...props} 
+                    deleteItem={() => deleteItem(props.id)}
+                    />
             })}
             <Paginate
                 jobsPerPage={jobsPerPage}

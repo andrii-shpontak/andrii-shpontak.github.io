@@ -24,6 +24,7 @@
 }
 
 .card_title {
+    text-decoration: none;
     font-size: 20px;
     color: #3a4562;
 }
@@ -70,6 +71,15 @@
     bottom: 24px;
     color: #878D9D;
     font-size: 16px;
+}
+
+.trashIcon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.trashIcon :hover {
+    color: rgb(120, 4, 4);
 }
 
 @media (max-width: 1200px) {
