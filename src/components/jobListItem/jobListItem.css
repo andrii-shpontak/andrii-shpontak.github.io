@@ -74,7 +74,9 @@
 }
 
 .trashIcon {
-    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
 }
 
@@ -123,6 +125,7 @@
     }
     .card_update {
         top: 13px;
+        right: 36px;
         font-size: 14px;
     }
     .card_title {

@@ -1,54 +1,30 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import JobListItem from '../jobListItem/JobListItem';
 import Paginate from '../paginate/Paginate';
-// import axios from 'axios';  // from API DB
-import {arrOfData} from './db';  //from loccal DB
+import { useSelector } from 'react-redux';
 
 const JobBoard = () => {
-    const [jobs, setJobs] = useState([]);
-    // const [loading, setLoading] = useState(false);
+    const items = useSelector(state => state.items.items);
+
     const [currentPage, setCurrentPage] = useState(1);
     const [jobsPerPage] = useState(5);
-  
-    useEffect(() => {
-        setJobs(arrOfData);  // from loccal DB
-    }, []);
-
-    // from API DB
-    // const jobsBase = useCallback(async () => {
-    //     //TODO: find the way to prevent previous request if the function has been called again
-            // setLoading(true);
-    //     const { data } = await axios.get('https://api.json-generator.com/templates/ZM1r0eic3XEy/data?access_token=wm3gg940gy0xek1ld98uaizhz83c6rh2sir9f9fu');
-    //     setJobs(data)
-            // setLoading(false);
-    // }, []);
-
-    // useEffect(() => {
-    //     jobsBase()
-    //     // eslint-disable-next-line
-    // }, []);
 
     const lastJobIndex = currentPage * jobsPerPage;
     const firstJobIndex = lastJobIndex - jobsPerPage;
-    const currentJob = jobs.slice(firstJobIndex, lastJobIndex);
+    const currentJob = items.slice(firstJobIndex, lastJobIndex);
 
     const paginate = pageNumber => setCurrentPage(pageNumber);
-
-    const deleteItem = (id) => setJobs(jobs.filter(job => job.id !== id));
 
     return (
         <div>
             {currentJob.map(({...props}) => {
                 return <JobListItem 
                     key={props.id} 
-                    {...props} 
-                    deleteItem={() => deleteItem(props.id)}
-                    />
+                    {...props}/>
             })}
             <Paginate
                 jobsPerPage={jobsPerPage}
-                totalJobs={jobs.length}
+                totalJobs={items.length}
                 paginate={paginate}
             />
         </div>

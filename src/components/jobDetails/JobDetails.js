@@ -3,14 +3,15 @@ import { Button } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Link, useParams } from 'react-router-dom';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-
-import { arrOfData } from '../jobBoard/db';
+import { useSelector } from 'react-redux';
 
 import './jobDetails.css';
 
 const JobDetails = () => {
+    const items = useSelector(state => state.items.items);
+
     const mark = useParams();
-    let job = arrOfData.find(job => job.id === mark.id);
+    let job = items.find(job => job.id === mark.id);
     const { name, salary, title, createdAt, pictures, benefits, location, address, email, phone, employment_type } = job;
     // const loc = `${location.lat},${location.long}`;
     const searchAddress = address.replace(/ /g, ',');

@@ -96,7 +96,6 @@ header {
 }
 
 .map_name {
-  font-family: "Proxima Nova";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: -0.625px;
@@ -189,7 +188,6 @@ header {
 }
 .about_text h2 {
   margin-bottom: 7px;
-  font-family: "Proxima Nova";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: -0.625px;
@@ -233,7 +231,6 @@ header {
   background: rgba(255, 207, 0, 0.15);
   border: 1px solid #ffcf00;
   border-radius: 8px;
-  font-family: "Proxima Nova";
   font-weight: 700;
   font-size: 16px;
   letter-spacing: -0.4px;
@@ -257,7 +254,6 @@ footer {
   height: 50px;
   width: 213px;
   border-radius: 8px;
-  font-family: "Proxima Nova";
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
