@@ -9,7 +9,7 @@ const initialState = {
 const itemReducer = createReducer(initialState, (builder) => {
     builder
         .addCase(addItem, (state, action) => {
-            state.items.push(action.payload);
+            state.items.unshift(action.payload);
         })
         .addCase(deleteItem, (state, action) => {
             state.items = state.items.filter(item => item.id !== action.payload.id);

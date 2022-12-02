@@ -12,8 +12,7 @@ const JobDetails = () => {
 
     const mark = useParams();
     let job = items.find(job => job.id === mark.id);
-    const { name, salary, title, createdAt, pictures, benefits, location, address, email, phone, employment_type } = job;
-    // const loc = `${location.lat},${location.long}`;
+    const { name, salary, title, createdAt, pictures, benefits, address, email, phone, employment_type } = job;
     const searchAddress = address.replace(/ /g, ',');
     return (
         <div style={{ position: 'relative' }}>

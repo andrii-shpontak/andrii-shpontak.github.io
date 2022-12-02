@@ -249,6 +249,10 @@ footer {
   margin-top: 89px;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 .footer_btn {
   left: -100px;
   height: 50px;

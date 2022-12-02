@@ -1,4 +1,3 @@
-import { useCallback } from 'react';
 import { Rating } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
